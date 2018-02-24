@@ -18,20 +18,20 @@ Output: false
 Source: Leetcode */
 
 function judgeCircle(moves) {
-  const movesArr = moves.split('');
+  const movesArr = moves.split("");
   var pos = { x: 0, y: 0 };
   for (let i = 0; i < movesArr.length; i++) {
     switch (movesArr[i]) {
-      case 'U':
+      case "U":
         pos.y = pos.y + 1;
         break;
-      case 'D':
+      case "D":
         pos.y = pos.y - 1;
         break;
-      case 'L':
+      case "L":
         pos.x = pos.x - 1;
         break;
-      case 'R':
+      case "R":
         pos.x = pos.x + 1;
         break;
     }
@@ -42,6 +42,4 @@ function judgeCircle(moves) {
   return false;
 }
 
-// O(n) running time because for loop must iterate over n array items 
-
-
+// O(n) running time because for loop must iterate over n array items

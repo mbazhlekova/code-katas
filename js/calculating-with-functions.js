@@ -12,42 +12,58 @@ Each calculation consist of exactly one operation and two numbers
 The most outer function represents the left operand, the most inner function represents the right operand. */
 
 var calc = function(num, operation) {
-  if (!operation) 
-    return num;
+  if (!operation) return num;
   return operation(num);
+};
+
+function zero(operation) {
+  return calc(0, operation);
+}
+function one(operation) {
+  return calc(1, operation);
+}
+function two(operation) {
+  return calc(2, operation);
+}
+function three(operation) {
+  return calc(3, operation);
+}
+function four(operation) {
+  return calc(4, operation);
+}
+function five(operation) {
+  return calc(5, operation);
+}
+function six(operation) {
+  return calc(6, operation);
+}
+function seven(operation) {
+  return calc(7, operation);
+}
+function eight(operation) {
+  return calc(8, operation);
+}
+function nine(operation) {
+  return calc(9, operation);
 }
 
-function zero(operation) {return calc(0, operation);}
-function one(operation) {return calc(1, operation);}
-function two(operation) { return calc(2, operation);}
-function three(operation) {return calc(3, operation);}
-function four(operation) {return calc(4, operation);}
-function five(operation) {return calc(5, operation);}
-function six(operation) {return calc(6, operation);}
-function seven(operation) {return calc(7, operation);}
-function eight(operation) {return calc(8, operation);}
-function nine(operation) {return calc(9, operation);}
-
-function plus(a) { 
-  return function(b) { 
-    return b + a; 
-    }
-  
+function plus(a) {
+  return function(b) {
+    return b + a;
+  };
 }
 function minus(a) {
-  return function(b) { 
-    return b - a; 
-    
-  }
-  
+  return function(b) {
+    return b - a;
+  };
 }
 function times(a) {
   return function(b) {
     return b * a;
-  }
+  };
 }
 function dividedBy(a) {
   return function(b) {
     return b / a;
-  }
+  };
 }

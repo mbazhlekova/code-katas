@@ -8,12 +8,12 @@ Output: 4
 Explanation: n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4). */
 
 function arrayPartition(arr) {
-    var sumOfPairs = 0;
-    arr.sort((a,b) => {
-        return a - b;
-    });
-    for (let i = 0; i < arr.length; i+=2) {
-        sumOfPairs += arr[i];
-    }
-    return sumOfPairs; 
+  var sumOfPairs = 0;
+  arr.sort((a, b) => {
+    return a - b;
+  });
+  for (let i = 0; i < arr.length; i += 2) {
+    sumOfPairs += arr[i];
+  }
+  return sumOfPairs;
 }

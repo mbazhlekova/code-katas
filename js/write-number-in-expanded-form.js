@@ -9,12 +9,15 @@ expandedForm(70304); // Should return '70000 + 300 + 4'
 NOTE: All numbers will be whole numbers greater than 0. */
 
 function expandedForm(num) {
-  let numArray = num.toString().split('');
-  return numArray.map((x, index) => {
-    if (x !== '0') {
-      return x + '0'.repeat((numArray.length - 1) - index);
-    }
-  }).filter(x => {
-    return x;
-  }).join(' + ');
+  let numArray = num.toString().split("");
+  return numArray
+    .map((x, index) => {
+      if (x !== "0") {
+        return x + "0".repeat(numArray.length - 1 - index);
+      }
+    })
+    .filter(x => {
+      return x;
+    })
+    .join(" + ");
 }

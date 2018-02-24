@@ -10,6 +10,6 @@ array_diff([1,2,2,2,3],[2]) == [1,3] */
 
 function array_diff(a, b) {
   return a.filter(x => {
-    return !(b.includes(x));
-  })
+    return !b.includes(x);
+  });
 }

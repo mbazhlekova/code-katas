@@ -2,7 +2,7 @@
 
 If the function is passed a valid PIN string, return true, else return false. */
 
-function validatePIN (pin) {
-  var re = new RegExp('(^[0-9]{4}$)|(^[0-9]{6}$)');
+function validatePIN(pin) {
+  var re = new RegExp("(^[0-9]{4}$)|(^[0-9]{6}$)");
   return re.test(pin);
 }

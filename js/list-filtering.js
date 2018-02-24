@@ -2,6 +2,6 @@
 
 function filterList(list) {
   return list.filter(x => {
-    return typeof x !== 'string';
-  })
+    return typeof x !== "string";
+  });
 }

@@ -35,30 +35,33 @@ Output:
 
 Return ""Battle Result: Good triumphs over Evil" if good wins, "Battle Result: Evil eradicates all trace of Good" if evil wins, or "Battle Result: No victor on this battle field" if it ends in a tie. */
 
-function goodVsEvil(good, evil){
-  
+function goodVsEvil(good, evil) {
   const goodWorthArr = [1, 2, 3, 3, 4, 10];
   const evilWorthArr = [1, 2, 2, 2, 3, 5, 10];
-  
-  var goodWorth = good.split(' ').map((x, index) => {
-    return x * goodWorthArr[index];
-  }).reduce((x,y) => {
-    return x + y;
-  });
-  
-  var evilWorth = evil.split(' ').map((x, index) => {
-    return x * evilWorthArr[index];
-  }).reduce((x,y) => {
-    return x + y;
-  })
-  
+
+  var goodWorth = good
+    .split(" ")
+    .map((x, index) => {
+      return x * goodWorthArr[index];
+    })
+    .reduce((x, y) => {
+      return x + y;
+    });
+
+  var evilWorth = evil
+    .split(" ")
+    .map((x, index) => {
+      return x * evilWorthArr[index];
+    })
+    .reduce((x, y) => {
+      return x + y;
+    });
+
   if (goodWorth > evilWorth) {
     return "Battle Result: Good triumphs over Evil";
-  }
-  else if (evilWorth > goodWorth) {
+  } else if (evilWorth > goodWorth) {
     return "Battle Result: Evil eradicates all trace of Good";
-  }
-  else {
+  } else {
     return "Battle Result: No victor on this battle field";
   }
 }

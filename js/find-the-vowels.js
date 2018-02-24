@@ -11,13 +11,12 @@ YoMama -> [1,2,4,6]
 */
 
 function vowelIndices(word) {
-  
   const re = /^[aeiouy]$/i;
   var indecies = [];
-  
+
   for (let i = 0; i < word.length; i++) {
     if (word[i].match(re)) {
-      indecies.push(i+1); 
+      indecies.push(i + 1);
     }
   }
   return indecies;

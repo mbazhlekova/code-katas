@@ -4,10 +4,10 @@ and returns the number of bits that are equal to one in the binary representatio
 Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case. */
 
 function CountBits(n) {
-    if (n === 0) {
-        return 0;
-    } else {
-        const binary = n.toString(2);
-        return binary.match(/1/gi).length;
-    }
-};
+  if (n === 0) {
+    return 0;
+  } else {
+    const binary = n.toString(2);
+    return binary.match(/1/gi).length;
+  }
+}
