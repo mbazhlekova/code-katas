@@ -1,12 +1,13 @@
-/* Write a function that takes an (unsigned) integer as input, and returns the number of bits that are equal to one in the binary representation of that number.
+/* Write a function that takes an (unsigned) integer as input, 
+and returns the number of bits that are equal to one in the binary representation of that number.
 
 Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case. */
 
-var countBits = function (n) {
+function CountBits(n) {
     if (n === 0) {
         return 0;
     } else {
-        var binary = n.toString(2);
+        const binary = n.toString(2);
         return binary.match(/1/gi).length;
     }
 };
