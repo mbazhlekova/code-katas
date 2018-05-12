@@ -78,7 +78,7 @@ Yeehaw
 Googol
 ```
 
-```texts
+```text
 Output
 
 Case #1: 1
