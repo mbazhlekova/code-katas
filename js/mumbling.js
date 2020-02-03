@@ -8,7 +8,9 @@ accum("cwAt");    // "C-Ww-Aaa-Tttt"
 The parameter of accum is a string which includes only letters from a..z and A..Z. */
 
 function accum(str) {
-  let arr = str.toLowerCase().split("");
+  let arr = str
+    .toLowerCase()
+    .split("");
   let newArr = arr.map((x, i) => {
     let multiply = x.repeat(i + 1);
     let capitalize = multiply[0].toUpperCase();
