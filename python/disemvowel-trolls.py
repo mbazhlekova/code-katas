@@ -14,11 +14,10 @@ Note: for this kata y isn't considered a vowel.
 
 def disemvowel(string):
     vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-    result = ''
     for char in string:
-        if (char not in vowels):
-            result += char
-    return result
+        if (char in vowels):
+            string = string.replace(char, '')
+    return string
 
 
 print(disemvowel("helloHELLO"))
