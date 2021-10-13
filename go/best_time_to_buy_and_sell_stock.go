@@ -7,7 +7,7 @@ func bestTimeToBuyAndSellStock(prices []int) int {
 	for i := 0; i < len(prices); i++ {
 		if prices[i] < minPrice {
 			minPrice = prices[i]
-		} else if prices[i] - minPrice > maxProfit {
+		} else if prices[i]-minPrice > maxProfit {
 			maxProfit = prices[i] - minPrice
 		}
 	}

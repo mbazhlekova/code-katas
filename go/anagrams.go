@@ -1,7 +1,9 @@
 package anagrams
 
 func isAnagram(s string, t string) bool {
-	if len(s) != len(t) { return false }
+	if len(s) != len(t) {
+		return false
+	}
 	hash := make(map[rune]int)
 	for _, char := range s {
 		hash[char]++
