@@ -1,4 +1,4 @@
-package duplicates
+package main
 
 func containsDuplicates(nums []int) bool {
 	seen := make(map[int]int)

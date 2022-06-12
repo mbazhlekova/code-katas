@@ -1,4 +1,4 @@
-package besttime
+package main
 
 import "math"
 
